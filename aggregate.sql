@@ -1,0 +1,28 @@
+show databases;
+use aids;
+use college;
+create table college(sid int,sname varchar(20),gpa decimal(3,2),city varchar(20));
+desc college;
+insert into college values(101,"ramu",9.2,"ong");
+insert into college values(102,"raju",9.2,"guntur");
+insert into college values(103,"ravi",8.4,"vijayawada");
+insert into college values(104,"meera",7.7,"kanigiri");
+insert into college values(106,"anil",8.7,"ongole");
+insert into college values(107,"rithu",7.5,"vijayawada");
+insert into college values(108,"harsha",7.8,"guntur");
+select *from college;
+select count(*) from college;
+select sum(gpa) from college;
+select avg(gpa) from college;
+select min(age) from college;
+select max(age) from college;
+select min(gpa) from college;
+select max(gpa) from college;
+select sum(age) from college;
+select avg(age) from college;
+select max(gpa) from college where gpa>8;
+select max(gpa) from college where gpa>10;
+select min(gpa) from college where gpa>8;
+select city,count(*) as address from college group by city;
+select city,count(*) as address from college group by city having count(*)>1;
+ 
