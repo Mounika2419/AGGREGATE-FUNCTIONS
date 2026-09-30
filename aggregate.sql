@@ -1,6 +1,5 @@
 show databases;
 use aids;
-use college;
 create table college(sid int,sname varchar(20),gpa decimal(3,2),city varchar(20));
 desc college;
 insert into college values(101,"ramu",9.2,"ong");
