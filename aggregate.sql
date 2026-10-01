@@ -24,4 +24,6 @@ select max(gpa) from college where gpa>10;
 select min(gpa) from college where gpa>8;
 select city,count(*) as address from college group by city;
 select city,count(*) as address from college group by city having count(*)>1;
- 
+select * from college order by gpa desc;
+select city,count(*) as address from college group by city order by address desc;
+select city,count(*) as address from college group by city having count(*)>1 order by address desc;
