@@ -27,3 +27,6 @@ select city,count(*) as address from college group by city having count(*)>1;
 select * from college order by gpa desc;
 select city,count(*) as address from college group by city order by address desc;
 select city,count(*) as address from college group by city having count(*)>1 order by address desc;
+select *from student order by sid DESC;
+ select *from student order by sid ASC;
+ select *from student LIMIT 3;
